@@ -1,2 +1,38 @@
 @import url(normalize.css);
 @import url(reset.css);
+
+:root {
+  /* Layout */
+  --base-unit: 27px;
+  
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --super--light--gray: rgba(168, 168, 168, 1);
+  --light--gray: rgba(138, 138, 138, 1);
+  --medium--gray: rgba(110, 110, 110, 1);
+  --black: rgba(44, 44, 44, 1);
+  --primary: rgba(154, 199, 91, 1);
+  --secondary: rgba(85, 118, 44, 1);
+  --hero: rgba(45, 62, 79, 1);
+  --hero--title: rgba(58, 153, 216, 1);
+  --medium--blue: rgba(67, 156, 207, 1);
+  --light--blue: rgba(72, 157, 205, 1);
+  --c-t-a: rgba(41, 44, 46, 1);
+  --placeholder: rgba(168, 168, 168, 1);
+
+  /* Text-size styles */
+  --nav--item: 14px;
+  --link: 16px;
+  --heading--x-l: 55px;
+  --heading--s: 24px;
+  --body--l: 32px;
+  --body--m: 18px;
+  --body--m-plus: 16px;
+  --button---secondary: 14px;
+  --button---primary: 14px;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
