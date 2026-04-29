@@ -1,5 +1,6 @@
 @import url(normalize.css);
 @import url(reset.css);
+@import url(flex-utility.css);
 
 :root {
   /* Layout */
@@ -127,7 +128,6 @@ form .field input::placeholder{
   font-style: italic;
   color: var(--super--light--gray);
 }
-
 form button{
   height: calc(var(--base-unit) * 2);
   border: 1px solid var(--white);
@@ -141,4 +141,16 @@ form button{
   color: var(--white);
   font-size: calc(var(--base-font-size) * 1.125);
   text-transform: uppercase;
+}
+
+/* 레이아웃 */
+.container{
+  width: 1272px;
+  margin: 0 auto;
+}
+.inner-pd{
+  padding: calc(var(--base-unit) * 3) 0;
+}
+.inner-top-pd{
+  padding: calc(var(--base-unit) * 3) 0 0;
 }
