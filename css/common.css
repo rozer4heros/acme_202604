@@ -4,7 +4,7 @@
 :root {
   /* Layout */
   --base-unit: 27px;
-  --base-font: 16px;
+  --base-font-size: 16px;
 
   /* Color styles */
   --white: rgba(255, 255, 255, 1);
@@ -22,20 +22,21 @@
   --placeholder: rgba(168, 168, 168, 1);
 
   /* Text-size styles */
-  --nav--item: calc(var(--base-font) * 0.875);
-  --link: var(--base-font);
-  --heading--x-l: calc(var(--base-font) * 3.4375);
-  --heading--s: calc(var(--base-font) * 1.5);
-  --body--l: calc(var(--base-font) * 2);
-  --body--m: calc(var(--base-font) * 1.125);
-  --body--m-plus: var(--base-font);
-  --button---secondary: calc(var(--base-font) * 0.875);
-  --button---primary: calc(var(--base-font) * 0.875);
+  --nav--item: calc(var(--base-font-size) * 0.875);
+  --link: var(--base-font-size);
+  --heading--x-l: calc(var(--base-font-size) * 3.4375);
+  --heading--s: calc(var(--base-font-size) * 1.5);
+  --body--l: calc(var(--base-font-size) * 2);
+  --body--m: var(--base-font-size);
+  --body--m-plus: calc(var(--base-font-size) * 1.125);
+  --button---secondary: calc(var(--base-font-size) * 0.875);
+  --button---primary: calc(var(--base-font-size) * 0.875);
 }
 
 /* 폰트 위계 */
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: var(--base-font-size);
 }
 
 .text-heading-xl{
@@ -89,4 +90,55 @@ body {
 .btn-primary{
   background: var(--primary);
   color: var(--secondary);
+}
+
+/* 폼 요소 */
+.hero{
+  background: var(--hero);
+  padding: calc(var(--base-unit) * 3) 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--base-unit) * 2);
+}
+form{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .field{
+  height: calc(var(--base-unit) * 2);
+  background: var(--white);
+  border-radius: 3px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--light--gray);
+}
+form .field input{
+  color: var(--black);
+}
+form .field input::placeholder{
+  font-style: italic;
+  color: var(--super--light--gray);
+}
+
+form button{
+  height: calc(var(--base-unit) * 2);
+  border: 1px solid var(--white);
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  font-size: calc(var(--base-font-size) * 1.125);
+  text-transform: uppercase;
 }
