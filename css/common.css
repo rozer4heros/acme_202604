@@ -38,6 +38,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: var(--base-font-size);
+  color: var(--black);
 }
 
 .text-heading-xl{
@@ -62,6 +63,8 @@ body {
 }
 .text-nav{
   font-size: var(--nav--item);
+  font-weight: bold;
+  text-transform: uppercase;
   /* line-height: calc(var(--base-unit) * 1); */
   /* (Auto line-height) */
 }
@@ -87,6 +90,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+}
+.btn .material-icons{
+  font-size: 14px;
 }
 .btn-primary{
   background: var(--primary);
@@ -153,4 +159,27 @@ form button{
 }
 .inner-top-pd{
   padding: calc(var(--base-unit) * 3) 0 0;
+}
+
+/* 헤더 */
+body>header{
+  background: var(--white);
+  padding: var(--base-unit) 0;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+.logo span{
+  position: absolute;
+  clip-path: inset(50%);
+  /* inset: 100%; */
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -65536px;
+}
+header nav ul{
+  gap: 10px;
+}
+header nav ul li:first-child{
+  margin-right: 40px;
 }
