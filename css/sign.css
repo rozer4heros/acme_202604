@@ -1,0 +1,72 @@
+.hero form {
+  position: relative;
+}
+.feedback {
+  width: 320px;
+  padding: 20px;
+  border-radius: 3px;
+  background: var(--white);
+  color: #f30000;
+
+  position: absolute;
+  top: 0;
+  left: calc(100% + 30px);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-unit);
+}
+
+.feedback::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-width: 15px 15px;
+  border-color: transparent var(--white) transparent transparent;
+  border-style: solid;
+
+  position: absolute;
+  top: 15px;
+  right: 100%;
+}
+
+/* .feedback::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, #00000000 50%, #ffffffff 50%);
+
+  position: absolute;
+  top: 15px;
+  right: 100%;
+}
+.feedback::after {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(45deg, #00000000 50%, #ffffffff 50%);
+
+  position: absolute;
+  top: 30px;
+  right: 100%;
+} */
+
+.box {
+  width: 0px;
+  height: 0px;
+  border-width: 5px 10px;
+  border-style: solid;
+  margin: 1rem auto;
+}
+.box1 {
+  /* border: 10px solid red; */
+  border-color: red;
+}
+.box2 {
+  border-color: red blue;
+}
+.box3 {
+  border-color: transparent red transparent transparent;
+}
