@@ -144,9 +144,18 @@ form .field {
   gap: 10px;
 
   color: var(--light--gray);
+  transition: 0.35s;
+}
+form .field label {
+  display: flex;
 }
 form .field input {
   color: var(--black);
+  width: 100%;
+  outline: none;
+}
+form .field:focus-within {
+  box-shadow: inset 0 0 5px rgba(72, 0, 255, 0.7);
 }
 form .field input::placeholder {
   font-style: italic;
