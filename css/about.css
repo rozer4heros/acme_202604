@@ -1,0 +1,40 @@
+.qnalist {
+  width: 750px;
+  margin: 0 auto;
+  gap: 1px;
+}
+.qnalist .question {
+  height: calc(var(--base-unit) * 2);
+  padding: 0 20px;
+  background: var(--super--light--gray);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qnalist .question span {
+  color: #000;
+  /* 속성을 따로 선언해야 javascript에서 편해진다 */
+  opacity: 0.2;
+}
+.qnalist .answer {
+  /* active height: auto; */
+  height: 0;
+  /* active padding: 20px 20px 30px; */
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-unit);
+
+  overflow: hidden;
+  transition: 0.35s;
+}
+.qnalist li.active .question span {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+.qnalist li.active .answer {
+  height: auto;
+  padding: 20px 20px 30px;
+}

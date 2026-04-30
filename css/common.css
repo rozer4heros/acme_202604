@@ -84,6 +84,8 @@ body {
   font-size: var(--link);
   /* line-height: calc(var(--base-unit) * 1); */
   /* (Auto line-height) */
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 /* 링크 버튼 */
@@ -192,6 +194,9 @@ hr {
   height: 1px;
   background: var(--super--light--gray);
 }
+section .header {
+  margin-bottom: calc(var(--base-unit) * 2);
+}
 
 /* 헤더 */
 body > header {
@@ -215,6 +220,16 @@ header nav ul li:first-child {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--light--gray);
+  cursor: pointer;
 }
 .slidewrapper .prev {
   left: 0;
@@ -238,14 +253,9 @@ header nav ul li:first-child {
   align-items: center;
   gap: var(--base-unit);
 }
-.slidecontainer .button {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--light--gray);
-  cursor: pointer;
+.slidecontainer li > p {
+  width: 700px;
+  text-align: center;
 }
 
 /* CTA */
